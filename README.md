@@ -14,10 +14,10 @@ not conflict with other ChiliPeppr objects.
 | ID                    | com-chilipeppr-workspace-sample |
 | Name                  | Workspace / Sample |
 | Description           | A ChiliPeppr Workspace sample. |
-| chilipeppr.load() URL | http://raw.githubusercontent.com/https://master/auto-generated-workspace.html |
-| Edit URL              | http://ide.c9.io/root/Chilipeppr Fresh |
-| Github URL            | http://github.com/https:/ |
-| Test URL              | https://preview.c9users.io/root/Chilipeppr Fresh/workspace.html |
+| chilipeppr.load() URL | https://raw.githubusercontent.com/customsolutions/workspace-Fresh/master/auto-generated-workspace.html |
+| Edit URL              | https://us-east-2.console.aws.amazon.com/cloud9/ide/69a7ec9d553a4af99fa6df082e763210 |
+| Github URL            | https://github.com/customsolutions/workspace-Fresh |
+| Test URL              | https://vfs.cloud9.us-east-2.amazonaws.com/vfs/69a7ec9d553a4af99fa6df082e763210/preview/Chilipeppr Fresh/workspace.html |
 
 ## Example Code for chilipeppr.load() Statement
 
@@ -34,7 +34,7 @@ back the instance of it to init() it.
 // this workspace should be loaded into.
 chilipeppr.load(
   "#pnlWorkspace",
-  "http://raw.githubusercontent.com/https://master/auto-generated-workspace.html",
+  "https://raw.githubusercontent.com/customsolutions/workspace-Fresh/master/auto-generated-workspace.html",
   function() {
     // Callback after workspace loaded into #pnlWorkspace
     // Now use require.js to get reference to instantiated workspace
@@ -135,7 +135,7 @@ The table below shows, in order, the methods and properties inside the workspace
           </tr>
       </thead>
       <tbody>
-      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-workspace-sample"<br><br>The ID of the widget. You must define this and make it unique.</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Workspace / Sample"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"A ChiliPeppr Workspace sample."</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/https://master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/root/Chilipeppr Fresh"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/https:/"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://Chilipeppr Fresh-root.c9users.io/workspace.html"</td></tr><tr valign="top"><td>widgetConsole</td><td>object</td><td>Contains reference to the Console widget object. Hang onto the reference
+      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-workspace-sample"<br><br>The ID of the widget. You must define this and make it unique.</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Workspace / Sample"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"A ChiliPeppr Workspace sample."</td></tr><tr valign="top"><td>url</td><td>string</td><td>"https://raw.githubusercontent.com/customsolutions/workspace-Fresh/master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"https://us-east-2.console.aws.amazon.com/cloud9/ide/69a7ec9d553a4af99fa6df082e763210"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"https://github.com/customsolutions/workspace-Fresh"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"https://raw.githubusercontent.com/customsolutions/workspace-Fresh/master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>widgetConsole</td><td>object</td><td>Contains reference to the Console widget object. Hang onto the reference
 so we can resize it when the window resizes because we want it to manually
 resize to fill the height of the browser so it looks clean.</td></tr><tr valign="top"><td>widgetSpjs</td><td>object</td><td>Contains reference to the Serial Port JSON Server object.</td></tr><tr valign="top"><td>init</td><td>function</td><td>function() <br><br>The workspace's init method. It loads the all the widgets contained in the workspace
 and inits them.</td></tr><tr valign="top"><td>getBillboard</td><td>function</td><td>function() <br><br>Returns the billboard HTML, CSS, and Javascript for this Workspace. The billboard
