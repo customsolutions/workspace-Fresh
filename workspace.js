@@ -142,7 +142,7 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
         loadTemplateWidget2: function(callback) {
 
             chilipeppr.load(
-                "#com-chilipeppr-widget-template-instance",
+                "#com-chilipeppr-widget2-template-instance",
                 "http://raw.githubusercontent.com/chilipeppr/widget-template/master/auto-generated-widget.html",
                 function() {
                     // Callback after widget loaded into #myDivWidgetTemplate
