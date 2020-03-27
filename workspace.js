@@ -139,7 +139,7 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
                 }
             );
         },
-        loadTemplateWidget: function(callback) {
+        loadTemplateWidget2: function(callback) {
 
             chilipeppr.load(
                 "#com-chilipeppr-widget-template-instance",
