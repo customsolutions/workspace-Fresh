@@ -145,22 +145,22 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
         loadSvg2gcode: function(callback) {
 
             chilipeppr.load(
-  "#myDivComZipwhipWidgetSvg2gcode",
-  "http://raw.githubusercontent.com/chilipeppr/widget-svg2gcode/master/auto-generated-widget.html",
-  function() {
-    // Callback after widget loaded into #myDivComZipwhipWidgetSvg2gcode
-    // Now use require.js to get reference to instantiated widget
-    cprequire(
-      ["inline:com-zipwhip-widget-svg2gcode"], // the id you gave your widget
-      function(myObjComZipwhipWidgetSvg2gcode) {
-        // Callback that is passed reference to the newly loaded widget
-        console.log("Widget / svg2gcode just got loaded.", myObjComZipwhipWidgetSvg2gcode);
-        myObjComZipwhipWidgetSvg2gcode.init();
-      }
-    );
-  }
-);
-        },
+                "#myDivComZipwhipWidgetSvg2gcode",
+                "http://raw.githubusercontent.com/chilipeppr/widget-svg2gcode/master/auto-generated-widget.html",
+                function() {
+                // Callback after widget loaded into #myDivComZipwhipWidgetSvg2gcode
+                // Now use require.js to get reference to instantiated widget
+                cprequire(
+                    ["inline:com-zipwhip-widget-svg2gcode"], // the id you gave your widget
+                    function(myObjComZipwhipWidgetSvg2gcode) {
+                        // Callback that is passed reference to the newly loaded widget
+                        console.log("Widget / svg2gcode just got loaded.", myObjComZipwhipWidgetSvg2gcode);
+                        myObjComZipwhipWidgetSvg2gcode.init();
+                    }
+                );
+            }
+        );
+    },
         
         /**
          * Load the Serial Port JSON Server widget via chilipeppr.load()
