@@ -148,7 +148,7 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
                     // Callback after widget loaded into #myDivWidgetTemplate
                     // Now use require.js to get reference to instantiated widget
                     cprequire(
-                        ["inline:com-chilipeppr-widget-template"], // the id you gave your widget
+                        ["inline:com-chilipeppr-widget2-template"], // the id you gave your widget
                         function(myObjWidgetTemplate) {
                             // Callback that is passed reference to the newly loaded widget
                             console.log("Widget / Template just got loaded.", myObjWidgetTemplate);
