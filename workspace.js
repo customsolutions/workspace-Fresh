@@ -71,7 +71,7 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
             
             this.loadTemplateWidget();
             
-            this.loadTemplateWidget2();
+            this.Svg2gcode();
             
             // Create our workspace upper right corner triangle menu
             this.loadWorkspaceMenu();
@@ -142,24 +142,24 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
             );
         },
         
-        loadTemplateWidget2: function(callback) {
+        loadSvg2gcode: function(callback) {
 
             chilipeppr.load(
-                "#com-chilipeppr-widget2-template-instance",
-                "http://raw.githubusercontent.com/chilipeppr/widget-template/master/auto-generated-widget.html",
-                function() {
-                    // Callback after widget loaded into #myDivWidgetTemplate
-                    // Now use require.js to get reference to instantiated widget
-                    cprequire(
-                        ["inline:com-chilipeppr-widget-template"], // the id you gave your widget
-                        function(myObjWidgetTemplate) {
-                            // Callback that is passed reference to the newly loaded widget
-                            console.log("Widget / Template just got loaded.", myObjWidgetTemplate);
-                            myObjWidgetTemplate.init();
-                        }
-                    );
-                }
-            );
+  "#myDivComZipwhipWidgetSvg2gcode",
+  "http://raw.githubusercontent.com/chilipeppr/widget-svg2gcode/master/auto-generated-widget.html",
+  function() {
+    // Callback after widget loaded into #myDivComZipwhipWidgetSvg2gcode
+    // Now use require.js to get reference to instantiated widget
+    cprequire(
+      ["inline:com-zipwhip-widget-svg2gcode"], // the id you gave your widget
+      function(myObjComZipwhipWidgetSvg2gcode) {
+        // Callback that is passed reference to the newly loaded widget
+        console.log("Widget / svg2gcode just got loaded.", myObjComZipwhipWidgetSvg2gcode);
+        myObjComZipwhipWidgetSvg2gcode.init();
+      }
+    );
+  }
+);
         },
         
         /**
