@@ -71,6 +71,8 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
             
             this.loadTemplateWidget();
             
+            this.loadTemplateWidget2();
+            
             // Create our workspace upper right corner triangle menu
             this.loadWorkspaceMenu();
             // Add our billboard to the menu (has name, url, picture of workspace)
@@ -124,6 +126,26 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
 
             chilipeppr.load(
                 "#com-chilipeppr-widget-template-instance",
+                "http://raw.githubusercontent.com/chilipeppr/widget-template/master/auto-generated-widget.html",
+                function() {
+                    // Callback after widget loaded into #myDivWidgetTemplate
+                    // Now use require.js to get reference to instantiated widget
+                    cprequire(
+                        ["inline:com-chilipeppr-widget-template"], // the id you gave your widget
+                        function(myObjWidgetTemplate) {
+                            // Callback that is passed reference to the newly loaded widget
+                            console.log("Widget / Template just got loaded.", myObjWidgetTemplate);
+                            myObjWidgetTemplate.init();
+                        }
+                    );
+                }
+            );
+        },
+        
+        loadTemplateWidget2: function(callback) {
+
+            chilipeppr.load(
+                "#com-chilipeppr-widget2-template-instance",
                 "http://raw.githubusercontent.com/chilipeppr/widget-template/master/auto-generated-widget.html",
                 function() {
                     // Callback after widget loaded into #myDivWidgetTemplate
