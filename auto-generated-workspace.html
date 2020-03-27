@@ -231,25 +231,7 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
                 }
             );
         },
-        loadTemplateWidget2: function(callback) {
-
-            chilipeppr.load(
-                "#com-chilipeppr-widget2-template-instance",
-                "http://raw.githubusercontent.com/chilipeppr/widget-template/master/auto-generated-widget.html",
-                function() {
-                    // Callback after widget loaded into #myDivWidgetTemplate
-                    // Now use require.js to get reference to instantiated widget
-                    cprequire(
-                        ["inline:com-chilipeppr-widget2-template"], // the id you gave your widget
-                        function(myObjWidgetTemplate) {
-                            // Callback that is passed reference to the newly loaded widget
-                            console.log("Widget / Template just got loaded.", myObjWidgetTemplate);
-                            myObjWidgetTemplate.init();
-                        }
-                    );
-                }
-            );
-        },
+        
         /**
          * Load the Serial Port JSON Server widget via chilipeppr.load()
          */
@@ -395,7 +377,7 @@ cpdefine("inline:com-chilipeppr-workspace-Fresh", ["chilipeppr_ready"], function
                         <p class="sample">Template Widget goes here</p>
                     </div>
                     
-                    <div id="com-chilipeppr-widget2-template-instance">
+                    <div id="com-chilipeppr-widget-template-instance">
                         <p class="sample">Template Widget 2 goes here</p>
                     </div>
 
